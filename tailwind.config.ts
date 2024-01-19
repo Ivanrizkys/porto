@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-xl": "url('/banner-background.svg')",
+        "hero-lg": "url('/banner-sm-background.svg')"
+      },
       fontFamily: {
         mullish: ["var(--font-mullish)"],
         fraunces: ["var(--font-fraunces)"],
@@ -38,7 +42,7 @@ const config: Config = {
       },
       animation: {
         // ! Custom animations with more than 1 animation separeted by commas dont work
-        // still isse from https://github.com/tailwindlabs/tailwindcss/issues/5015
+        // isue from https://github.com/tailwindlabs/tailwindcss/issues/5015
         "type-cursor": "text 3.5s steps(20, end), blink 0.5s step-end infinite",
         text: "text 3.5s steps(20, end)",
         blink: "blink 0.5s step-end infinite",
