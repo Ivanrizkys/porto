@@ -2,9 +2,11 @@ import Banner from '@/components/Banner'
 import Navbar from '@/components/Navbar'
 import Portofolio from '@/components/Portofolio'
 import Skills from '@/components/Skills'
-import data from '../dummy/data'
+import { getUser } from '@/service/index'
 
-export default function Home() {
+export default async function Home() {
+  const data = await getUser()
+
   return (
     <main>
       <Navbar />
