@@ -9,10 +9,7 @@ interface BannerProps {
 const Banner = ({ name }: BannerProps) => {
   return (
     <Container>
-      <div
-        style={{ backgroundImage: `url(/banner-background.svg)` }}
-        className="w-full rounded-2.5xl mt-24 py-32 px-2 bg-cover"
-      >
+      <div className="w-full rounded-2.5xl mt-24 py-32 px-2 bg-hero-xl bg-cover">
         <div className="flex justify-center">
           <div>
             <h1 className="font-fraunces text-5xl min-[455px]:text-6xl md:text-8xl font-semibold text-primary-200 animate-type-cursor overflow-hidden text-nowrap border-r-4 border-solid border-primary-200 mx-auto">
@@ -26,7 +23,11 @@ const Banner = ({ name }: BannerProps) => {
           <span className="text-primary-200">NextJs</span>
         </p>
         <div className="flex justify-center mt-14">
-          <Link href="#project-section" className="animate-bounce">
+          <Link
+            href="#project-section"
+            aria-label="Read more about project that Ivan has ever made"
+            className="animate-bounce"
+          >
             <ScrollButton />
           </Link>
         </div>
