@@ -9,10 +9,7 @@ interface BannerSmallProps {
 const BannerSmall = ({ title }: BannerSmallProps) => {
   return (
     <Container>
-      <div
-        style={{ backgroundImage: "url(/banner-sm-background.svg)" }}
-        className="mt-24 py-28 bg-left bg-no-repeat bg-cover sm:bg-center rounded-2.5xl overflow-hidden p-2"
-      >
+      <div className="mt-24 py-28 bg-left bg-hero-lg bg-no-repeat bg-cover sm:bg-center rounded-2.5xl overflow-hidden p-2">
         <Link
           href="/"
           className="text-secondary-300 font-mullish font-bold text-lg flex items-center justify-center gap-x-2"
